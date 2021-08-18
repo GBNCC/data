@@ -1,0 +1,26 @@
+PSR              J1800+5034
+LAMBDA   270.4262976124539  1     0.0001386756918
+BETA      74.0117182541300  1     0.0000371371285
+F0      1.7289817594500805  1  0.0000000000334550
+F1     -3.548443049058D-16  1  1.637839947390D-17
+PEPOCH        56500.000000
+START            56365.731
+FINISH           56670.866
+DM               22.707099  1            0.058040
+SOLARN0              10.00
+EPHEM               DE430
+CLK                 TT(BIPM)                        
+UNITS               TDB
+TIMEEPH             FB90
+T2CMETHOD           TEMPO
+CORRECT_TROPOSPHERE N
+PLANET_SHAPIRO      N
+DILATEFREQ          N
+NTOA                   338
+TRES                814.31
+TZRMJD  56520.20063430966024
+TZRFRQ             894.804
+TZRSITE                  1
+MODE                     0
+NITS                     1
+JUMP_1         0.016041670  1         0.010498734
