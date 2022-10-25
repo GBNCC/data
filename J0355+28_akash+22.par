@@ -1,0 +1,30 @@
+# Created: 2022-09-14T15:37:27.049334
+# PINT_version: 0.9.0+81.gafd15b0f
+# User: akash
+# Host: akash-LenovoLegion
+# OS: Linux-5.15.0-46-generic-x86_64-with-glibc2.31
+# Format: pint
+PSR                              J0355+28
+EPHEM                               DE430
+CLOCK                        TT(BIPM2015)
+START              58890.9234059097739930
+FINISH             59013.6050389533699654
+DILATEFREQ                              N
+DMDATA                                  N
+NTOA                                   99
+CHI2                   143.01493563352003
+RAJ                      3:55:22.84218690 1 0.02324634843368712442
+DECJ                    28:38:50.97277049 1 0.81561913397144492066
+PMRA                                  0.0
+PMDEC                                 0.0
+PX                                    0.0
+POSEPOCH           56277.1647569444500000
+F0                  2.7402575691297282414 1 2.0345594628756508789e-10
+F1                                    0.0
+PEPOCH             56277.1647569444500000
+PLANET_SHAPIRO                          N
+DM                                 48.788 0 0.0
+DM1                                   0.0
+TZRMJD             58890.9234059094524056
+TZRSITE                               ssb
+TZRFRQ                                inf
