@@ -1,0 +1,68 @@
+---
+
+source: J2355+2246
+chime-name: J2355+2246
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J2355+2246.par 
+toas:
+  - CHIME_J2355+2246_tempo2.tim
+  - J2356+2246_aloisi+19.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  emax: ~ 
+  bad-epoch:
+    - 59139
+    - 59284
+    - 59287
+    - 59315
+    - 59316
+    - 59325
+    - 59330
+    - 59393
+    - 59595
+    - 59596
+    - 59608
+    - 59617
+    - 59618
+    - 59621
+    - 59627
+    - 59718
+    - 59747
+    - 59860
+    - 59891
+    - 59910
+    - 59936
+    - 59940
+    - 59942
+    - 59943
+    - 59945
+    - 59946
+    - 59948
+    - 59957
+    - 59960
+    - 59961
+    - 59971
+    - 59973
+    - 59978
+    - 60001
+    - 60008
+    - 60009
+    - 60018
+    - 60038
+    - 60039
+    - 60043
+    - 60057
+    - 60058
+    - 60061
+    - 60066
+    - 60069
+    - 60072

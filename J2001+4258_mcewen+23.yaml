@@ -1,0 +1,35 @@
+---
+
+source: J2001+4258
+chime-name: J2001+42
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J2001+4258.par 
+model-compare: J2001+4258_lynch+18.par
+toas:
+  - CHIME_J2001+42_tempo2.tim
+  - J2001+4258_lynch+18.tim
+
+warnings:
+  - Frequency derivs up to F4 included in fit.
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,F2,F3,F4,JUMP1,JUMP2,DM]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  bad-range: [58600,59050]
+  emax: ~ 
+  bad-epoch:
+    - 58666
+    - 59285
+    - 59286
+    - 59450
+    - 59627
+    - 59718
+    - 59719
+    - 59959

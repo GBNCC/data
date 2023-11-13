@@ -1,0 +1,29 @@
+---
+
+source: J1927+2859
+chime-name: J1928+28
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1927+2859.par
+model-compare: J1928+28_akash+22.par
+toas:
+  - J1928+28_akash+22.tim
+  - J1928+28_chime-reproc.tim
+ignore-toas:
+  - P3436_J1928+28.tim # Replaced by Akash's TOAs
+  - CHIME_J1928+28_tempo2.tim # Requires multiple days' observations added together
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: 
+  emax:
+  bad-epoch:
+    - 59475
+    - 59953
+    - 59639

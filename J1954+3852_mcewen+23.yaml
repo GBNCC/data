@@ -1,0 +1,29 @@
+---
+
+source: J1954+3852
+chime-name: J1954+3852
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1954+3852.par 
+model-compare: J1954+3852_kawash+18.par
+toas:
+  - CHIME_J1954+3852_tempo2.tim
+  - J1954+3852_kawash+18.tim
+
+warnings:
+  - Frequency derivs up to F4 included in fit.
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,F2,F3,F4,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  emax: ~ 
+  bad-epoch:
+    - 59286
+    - 59719
+    - 59959

@@ -1,0 +1,42 @@
+---
+
+source: J0406+3039
+chime-name: J0406+3039
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J0406+3039.par 
+toas:
+  - CHIME_J0406+3039_tempo2.tim
+  - J0406+3039_inprep.tim
+
+warnings:
+  - In Megan's paper; GBT data have been included with her permission.
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,PMELONG,PMELAT,F0,F1,PB,A1,TASC,EPS1,EPS2,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~
+  bad-range: [58400,58550]
+  mjd-end: ~
+  emax: ~
+  bad-epoch:
+    - 58806
+    - 58813
+    - 58815
+    - 58818
+    - 58906
+    - 58632
+    - 59284
+    - 59285
+    - 59287
+    - 59288
+    - 59449
+    - 59718
+    - 58814
+    - 59014
+    - 59941
+    - 59960

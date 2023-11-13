@@ -1,0 +1,57 @@
+---
+
+source: J2351+6500
+chime-name: J2352+65
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J2351+6500.par 
+toas:
+  - CHIME_J2352+65_tempo2.tim
+  - J2351+6500_inprep.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,JUMP1,GLEP_1,GLF0_1,GLF1_1,GLF0_2]
+ephem: DE430
+bipm: BIPM2015
+
+warnings:
+  - Previously difficult; now fit with two glitches. 
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: 
+  emax: ~ 
+  bad-range: [58500,58600]
+  bad-epoch:
+    - 58905
+    - 59284
+    - 59286
+    - 59393
+    - 59627
+    - 59718
+    - 59283
+    - 59285
+    - 59775
+    - 59776
+    - 59777
+    - 59778
+    - 59779
+    - 59782
+    - 59784
+    - 59785
+    - 59786
+    - 59787
+    - 59788
+    - 59793
+    - 59796
+    - 59797
+    - 59798
+    - 59800
+    - 59801
+    - 59803
+    - 59804
+    - 59805
+    - 59806
+    - 56793
+    - 59003

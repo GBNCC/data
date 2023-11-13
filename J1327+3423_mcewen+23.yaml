@@ -1,0 +1,43 @@
+---
+
+source: J1327+3423 
+chime-name: J1327+3423
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1327+3423.par 
+toas:
+  - CHIME_J1327+3423_tempo2.tim 
+  - J1327+3423_inprep_noLWA.tim
+
+ignore-toas:
+  - J1327+3423_inprep.tim
+
+warnings:
+  - AEM 05/15/23: removed LWA TOAs (and their JUMP)
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,PMELONG,PMELAT,JUMP1,JUMP3,JUMP4,DM]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~
+  mjd-end: ~ 
+  bad-range: [58400,58550]
+  emax: ~ 
+  bad-epoch:
+    - 58806
+    - 58815
+    - 58816
+    - 58818
+    - 58820
+    - 58761
+    - 58759
+    - 58772
+    - 58905
+    - 58906
+    - 59102
+    - 59285
+    - 59627
+    - 59718

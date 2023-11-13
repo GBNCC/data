@@ -1,0 +1,23 @@
+---
+
+source: J1938+6604
+chime-name: J1938+6604
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1938+6604.par 
+model-compare: J1938+6604_lynch+18.par
+toas:
+  - CHIME_J1938+6604_tempo2.tim
+  - J1938+6604_lynch+18.tim 
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,PB,A1,TASC,EPS1,EPS2,JUMP1,PMELONG,PMELAT]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~
+  mjd-end: ~
+  emax: ~
+  bad-epoch:
