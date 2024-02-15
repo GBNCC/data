@@ -1,0 +1,24 @@
+---
+
+source: J1949+3426
+chime-name: J1949+3426
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1949+3426.par 
+model-compare: J1949+3426_aloisi+19.par
+toas:
+  - CHIME_J1949+3426_tempo2.tim
+  - J1949+3426_aloisi+19.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  emax: ~ 
+  bad-epoch:
+    - 59395

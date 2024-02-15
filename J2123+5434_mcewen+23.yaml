@@ -1,0 +1,39 @@
+---
+
+source: J2123+5434
+chime-name: J2122+54
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J2123+5434.par 
+toas:
+  - CHIME_J2122+54_tempo2.tim 
+  - J2123+5434_lynch+18.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,JUMP1,PMELONG,PMELAT]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  bad-range: [58400,58550]
+  #emax: 500.0 
+  bad-epoch:
+    - 58814
+    - 58816
+    - 58905
+    - 58762
+    - 58769
+    - 59284
+    - 59285
+    - 59286
+    - 59287
+    - 59395
+    - 59450
+    - 59719
+    - 56365 # accounts for Ryan's EMAX = 450
+    - 56365 # accounts for Ryan's EMAX = 450
+    - 56406 # accounts for Ryan's EMAX = 450
+    - 56451 # accounts for Ryan's EMAX = 450
+    - 56538 # accounts for Ryan's EMAX = 450
+    - 58815

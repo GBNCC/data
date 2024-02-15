@@ -1,0 +1,29 @@
+---
+
+source: J1921-0525
+chime-name: J1921-05
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1921-0525.par 
+toas:
+  - CHIME_J1921-05_tempo2.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  #emax: 3000.0 
+  bad-epoch:
+    - 59450
+    - 59284
+    - 59614
+    - 59944
+    - 59955
+    - 59956
+    - 59981
+    - 59984

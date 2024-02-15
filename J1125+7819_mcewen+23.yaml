@@ -1,0 +1,39 @@
+---
+
+source: J1125+7819
+chime-name: J1125+7819
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1125+7819.par 
+model-compare: J1125+7819_lynch+18.par
+toas:
+  - CHIME_J1125+7819_tempo2.tim
+  - J1125+7819_lynch+18.tim 
+
+warnings:
+  - Residuals are a bit gnarly; probably needs DM modeling to improve.
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,PMELONG,PMELAT,F0,F1,PB,A1,TASC,EPS1,EPS2,JUMP1,JUMP2,JUMP3,DM]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: #58600.0 
+  mjd-end: ~
+  emax: 15.0 
+  bad-epoch:
+    - 58524
+    - 58818
+    - 58905
+    - 58906
+    - 58664
+    - 58698
+    - 58761
+    - 58659
+    - 59286
+    - 59287
+    - 59718
+    - 59734
+

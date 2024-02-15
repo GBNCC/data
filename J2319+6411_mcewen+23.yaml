@@ -1,0 +1,28 @@
+---
+
+source: J2319+6411 
+chime-name: J2316+64
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J2319+6411.par 
+toas:
+  - CHIME_J2316+64_tempo2.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  bad-range: [59150,59275] 
+  mjd-end: ~
+  emax: ~ 
+  bad-epoch:
+    - 59230
+    - 59284
+    - 59393
+    - 59627
+    - 59413
+    - 59414
+    - 59718

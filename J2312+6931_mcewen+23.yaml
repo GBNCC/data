@@ -1,0 +1,25 @@
+---
+
+source: J2312+6931
+chime-name: J2312+6931
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J2312+6931.par 
+model-compare: J2312+6931_lynch+18.par
+toas:
+  - CHIME_J2312+6931_tempo2.tim
+  - J2312+6931_lynch+18.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,JUMP1,JUMP2,DM]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  emax: ~ 
+  bad-epoch:
+    - 59286
+    - 59393

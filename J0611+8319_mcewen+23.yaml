@@ -1,0 +1,31 @@
+---
+
+source: J0611+8319
+chime-name: J0614+83
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J0611+8319.par 
+toas:
+  - CHIME_J0614+83_tempo2.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  bad-epoch:
+    - 59284
+    - 59288
+    - 59359
+    - 59758
+    - 59953
+    - 59954
+    - 59955
+    - 59958
+    - 59959
+    - 59961
+    - 59985

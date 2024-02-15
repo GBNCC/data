@@ -1,0 +1,36 @@
+---
+
+source: J2214+5357
+chime-name: J2213+53
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J2214+5357.par
+toas:
+  - CHIME_J2213+53_tempo2.tim
+  - J2214+5357_inprep.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  emax: ~ 
+  bad-epoch:
+    - 59284
+    - 59627
+    - 59718
+    - 59772
+    - 59777
+    - 59778
+    - 59796
+    - 59797
+    - 59805
+    - 59806
+    - 59774
+    - 59800
+    - 59803
+    - 59215

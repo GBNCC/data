@@ -1,0 +1,29 @@
+---
+
+source: J2242+6346
+chime-name: J2244+63
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J2242+6346.par 
+toas:
+  - CHIME_J2244+63_tempo2.tim
+ignore-toas: # still needs phase connection
+  - J2242+6346_inprep.tim
+
+warnings:
+  - Something very strange with this one (F2-F9 included?!). Needs timing help.
+  - NGP source, but should have GBT data (check). 
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,F2,F3,F4,F5,F6,F7,F8,F9]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-end: ~
+  emax: ~ 
+  bad-epoch:
+    - 59284
+    - 59393
+    - 59627

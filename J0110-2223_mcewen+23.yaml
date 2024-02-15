@@ -1,0 +1,21 @@
+---
+
+source: J0110-2223
+chime-name: J0110-2223
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J0110-2223.par 
+toas:
+  - J0110-2223_inprep.tim 
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~
+  mjd-end: ~ 
+  emax: ~ 
+  bad-epoch: ~

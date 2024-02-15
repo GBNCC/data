@@ -1,0 +1,36 @@
+---
+
+source: J1641+8049
+chime-name: J1641+8049
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1641+8049.chime.par 
+model-compare: J1641+8049_lynch+18.par
+toas:
+  - CHIME_J1641+8049_tempo2.tim
+ignore-toas:
+  - J1641+8049_lynch+18.tim
+
+warnings:
+  - Solution needs major work, rel. binary (full set of TOAs gives convergence error).
+  - Should try phase connecting GBT/CHIME TOAs with those from CHIME remade.
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,PMELONG,PMELAT,PX,F0,F1,FB0,FB1,A1,TASC,EPS1,EPS2,A1DOT]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~
+  mjd-end: ~
+  #emax: 15.0 
+  bad-epoch:
+    - 59284
+    - 59285
+    - 59288
+    - 59105
+    - 59393
+    - 59719
+    - 59450
+    - 59609

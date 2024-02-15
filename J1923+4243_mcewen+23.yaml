@@ -1,0 +1,27 @@
+---
+
+source: J1923+4243
+chime-name: J1923+4243
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1923+4243.par 
+model-compare: J1923+4243_lynch+18.par
+toas:
+  - CHIME_J1923+4243_tempo2.tim 
+  - J1923+4243_lynch+18.tim
+
+warnings:
+  - Glitch included in fit, but residuals look mostly ok.
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,F2,DM,JUMP1,JUMP2,GLEP_1,GLF0_1,GLF1_1,GLF2_1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~
+  mjd-end: ~ 
+  emax: ~ 
+  bad-epoch:
+    - 59285

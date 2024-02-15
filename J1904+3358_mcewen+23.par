@@ -1,0 +1,31 @@
+# Created: 2023-03-08T13:39:35.120099
+# PINT_version: 0.9.3
+# User: swiggumj
+# Host: swiggumj-mbpro.local
+# OS: macOS-10.16-x86_64-i386-64bit
+# Format: pint
+PSR                              J1904+33
+EPHEM                               DE430
+CLOCK                        TT(BIPM2015)
+UNITS                                 TDB
+START              58852.7111704249157292
+FINISH             59926.8985136809691667
+DILATEFREQ                              N
+DMDATA                                  N
+NTOA                                  327
+CHI2                                  0.0
+ELONG                 294.423914410427244 1 0.00000530188603066092
+ELAT                   56.050475122159376 1 0.00000473620978918636
+PMELONG                               0.0
+PMELAT                                0.0
+PX                                    0.0
+ECL                              IERS2010
+POSEPOCH           59389.0000000000000000
+F0                  2.3978952323028443602 1 3.0699146185918516222e-12
+F1              -1.4721078359922049162e-15 1 2.2566133701150794878e-19
+PEPOCH             59389.0000000000000000
+JUMP            -fe Rcvr_CHIME        0.2518914410113213 1 0.0032326798227158347
+PLANET_SHAPIRO                          N
+DM                   81.66055534019436833 1 0.30159878313501392588
+DM1                                   0.0
+DMEPOCH            59389.0000000000000000

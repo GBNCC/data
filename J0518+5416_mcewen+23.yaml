@@ -1,0 +1,35 @@
+---
+
+source: J0518+5416
+chime-name: J0518+5416
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J0518+5416.par 
+model-compare: J0518+5416_lynch+18.par
+toas:
+  - CHIME_J0518+5416_tempo2.tim 
+  - J0518+5416_lynch+18.tim
+
+warnings:
+  - F2 included in fit, but residuals look ok.
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,F2,DM,JUMP1,JUMP2]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~
+  mjd-end: ~ 
+  emax: ~ 
+  bad-epoch:
+    - 59287
+    - 59288
+    - 59449
+    - 59718
+    - 59064
+    - 59960
+    - 59961
+    - 59941
+    - 59953

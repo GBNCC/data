@@ -1,0 +1,35 @@
+source: J2029+5459 
+chime-name: J2030+55
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J2029+5459.par 
+toas:
+  - CHIME_J2030+55_tempo2.tim
+  - J2029+5459_inprep.tim
+
+warnings:
+  - Previously troublesome (F0-3), now fit with two glitches.
+  - handful of early CHIME TOAs are strange; they are not in the known bad-range, however.  
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,GLEP_1,GLF0_1,GLF0_2,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start:
+  bad-range: [58400,58750]
+  mjd-end: ~
+  emax:
+  bad-epoch:
+    - 58815
+    - 59284
+    - 59285
+    - 59450
+    - 59719
+    - 59627
+    - 59785
+    - 59834
+    - 59959
+    - 59718

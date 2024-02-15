@@ -1,0 +1,35 @@
+---
+
+source: J1837+5156 
+chime-name: J1836+51
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1837+5156.par
+toas:
+  - CHIME_J1836+51_tempo2.tim
+  - J1836+51_inprep.tim
+
+warnings:
+  - Still need to add GBT TOAs from Megan(?) 
+  - Some recent CHIME data excised (apparent outliers; check). 
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  emax: ~ 
+  bad-epoch: # Used large_residuals(fo, 8500) to populate
+    - 59064
+    - 59170
+    - 59171
+    - 59216
+    - 58984
+    - 59007
+    - 59040
+    - 59957 # Looks like an outlier; revisit?
+    - 60001 # Looks like an outlier; revisit?

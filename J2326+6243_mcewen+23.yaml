@@ -1,0 +1,29 @@
+---
+
+source: J2326+6243
+chime-name: J2326+6243
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J2326+6243.par 
+toas:
+  - CHIME_J2326+6243_tempo2.tim
+  - J2326+6243_inprep.tim 
+
+warnings:
+  - F2 included in the fit, but residuals still look bad.
+  - CHIME-only config exists.
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,DM,F0,F1,F2,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  emax: ~ 
+  bad-epoch:
+    - 59464
+    - 59712
+    - 59979 # Removing this allows CHIME-only fit without F2+ (large gap too)

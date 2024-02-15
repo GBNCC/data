@@ -1,0 +1,27 @@
+---
+
+source: J1904+3358
+chime-name: J1904+33
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1904+3358.par 
+model-compare: J1904+33_akash+22.par
+toas:
+  - J1904+33_akash+22.tim
+  - CHIME_J1904+33_tempo2.tim
+ignore-toas:
+  - P3436_J1904+33.tim # Replaced by Akash's TOAs (above)
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,DM,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  emax: ~ 
+  bad-epoch:
+    - 59393
+    - 59960

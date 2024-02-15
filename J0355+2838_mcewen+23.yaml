@@ -1,0 +1,30 @@
+---
+
+source: J0355+2838
+chime-name: J0355+28
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J0355+2838.par 
+model-compare: J0355+28_akash+22.par
+toas:
+  - J0355+28_akash+22.tim 
+  - CHIME_J0355+28_tempo2.tim
+ignore-toas:
+  - P3436_J0355+28.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,DM,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~
+  mjd-end: ~
+  emax: ~ # 1300.0
+  bad-epoch:
+    - 58906
+    - 59285
+    - 59449
+    - 59628
+    - 59942

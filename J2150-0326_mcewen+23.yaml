@@ -1,0 +1,39 @@
+---
+
+source: J2150-0326
+chime-name: J2150-0326
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J2150-0326.par 
+toas:
+  - CHIME_J2150-0326_tempo2.tim
+  - J2150-0326_inprep.tim
+
+warnings:
+  - In Megan's paper; GBT data have been included with her permission.
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,PMELONG,PMELAT,F0,F1,PB,A1,TASC,EPS1,EPS2,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~
+  mjd-end: ~
+  emax: ~
+  bad-epoch:
+    - 59284
+    - 59286
+    - 59287
+    - 59393
+    - 59450
+    - 59627
+    - 59940
+    - 59942
+    - 59943
+    - 59948
+    - 59950
+    - 59957
+    - 59961
+    - 59971

@@ -1,0 +1,39 @@
+# Created: 2023-02-16T16:26:40.409041
+# PINT_version: 0.9.3
+# User: aemcewen
+# Host: UWM004905
+# OS: macOS-10.16-x86_64-i386-64bit
+# Format: pint
+PSRJ                           J0530-3847
+EPHEM                               DE430
+CLK                          TT(BIPM2015)
+UNITS                                 TDB
+START              57213.6242568785137037
+FINISH             57728.3329731676447917
+TIMEEPH                              FB90
+T2CMETHOD                        IAU2000B
+DILATEFREQ                              N
+DMDATA                                  N
+NTOA                                   50
+CHI2                     42.1919065688835
+ELONG                  77.591865915758433 1 0.00006508397085705042
+ELAT                  -61.903177977006834 1 0.00004481302012027228
+PMELONG                               0.0
+PMELAT                                0.0
+PX                                    0.0
+ECL                              IERS2010
+POSEPOCH           57470.0000000000000000
+F0                  1.1031415866016701067 1 1.7453885784164644243e-11
+F1              -7.5605316934859916577e-16 1 2.4379340054242340736e-18
+F2                                    0.0
+PEPOCH             57470.0000000000000000
+CORRECT_TROPOSPHERE                         N
+PLANET_SHAPIRO                          N
+NE_SW                                10.0
+SWM                                   0.0
+DM                                  48.55693854915355599          0.026265711 
+DM1                                   0.0
+DMEPOCH            57470.0000000000000000
+TZRMJD             57474.0253748428953935
+TZRSITE                                 1
+TZRFRQ                             344.89

@@ -1,0 +1,34 @@
+---
+
+source: J1806+2819
+chime-name: J1806+2819
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1806+2819.par 
+model-compare: J1806+2819_kawash+18.par
+toas:
+  - CHIME_J1806+2819_tempo2.tim
+  - J1806+2819_kawash+18.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,PMELONG,PMELAT,F0,F1,PB,A1,T0,OM,ECC,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~
+  mjd-end: ~
+  #emax: 300.0 
+  bad-epoch:
+    - 59170
+    - 59285
+    - 59395
+    - 59045
+    - 59051
+    - 59076
+    - 59474
+    - 59627
+    - 59808
+    - 59959
+    - 60003

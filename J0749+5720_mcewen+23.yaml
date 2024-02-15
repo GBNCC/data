@@ -1,0 +1,27 @@
+---
+
+source: J0749+5720
+chime-name: J0749+5720
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J0749+5720.par 
+toas:
+  - CHIME_J0749+5720_tempo2.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  #emax: 1900.0 
+  bad-epoch:
+    - 59287
+    - 59285
+    - 59286
+    - 59763
+    - 59954
+    - 59094

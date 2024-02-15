@@ -1,0 +1,42 @@
+---
+
+source: J0214+5222
+chime-name: J0214+5222
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J0214+5222.par 
+toas:
+  - J0214+5222_inprep.tim
+  - CHIME_J0214+5222_tempo2.tim
+
+# Individual tims currently ignored because JUMPs needed to be fixed manually 
+# with pintk; all TOAs are currently incorporated in J0214+5222_mjdJumps.tim.
+# Jumps are still problematic; 1/2 are LOFAR/CHIME, but 3 is a weird GBT, not simply MJD range
+fit-params: [ELONG,ELAT,PMELAT,PMELONG,F0,F1,PB,A1,T0,ECC,OM,JUMP1,JUMP2,JUMP3]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~
+  mjd-end: ~
+  bad-range: [58400,58550]
+  emax: ~ 
+  bad-epoch: 
+    - 58806
+    - 58814
+    - 58815
+    - 58818
+    - 58905
+    - 58767
+    - 58706
+    - 58761
+    - 59284
+    - 59393
+    - 59628
+    - 59718
+    - 59316
+    - 59591
+    - 59620
+    - 59941
+    - 59960

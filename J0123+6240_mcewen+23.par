@@ -1,0 +1,32 @@
+# Created: 2022-11-04T11:25:55.331686
+# PINT_version: 0.9.1+218.gcce47dc0
+# User: swiggumj
+# Host: phy-swiggumj-l2.uits.uwm.edu
+# OS: macOS-10.16-x86_64-i386-64bit
+# Format: pint
+PSR                              J0125+62
+EPHEM                               DE430
+CLOCK                        TT(BIPM2015)
+UNITS                                 TDB
+START              58933.8814833295000926
+FINISH             59883.2830270136525000
+DILATEFREQ                              N
+DMDATA                                  N
+NTOA                                  368
+CHI2                                  0.0
+ELONG                  49.617865721555454 1 0.00002529609554679635
+ELAT                   48.575157406332231 1 0.00002050934912207464
+PMELONG                               0.0
+PMELAT                                0.0
+PX                                    0.0
+ECL                              IERS2010
+POSEPOCH           59408.0000000000000000
+F0                  0.5854127972964988371 1 2.1555047963823435625e-12
+F1               -4.61820700973855602e-16 1 2.097446067913747911e-19
+PEPOCH             59408.0000000000000000
+PLANET_SHAPIRO                          N
+NE_SW                                 4.0
+SWM                                   0.0
+DM                                116.832
+DM1                                   0.0
+DMEPOCH            59408.0000000000000000

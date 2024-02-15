@@ -1,0 +1,96 @@
+---
+
+source: J0141+6303
+chime-name: J0141+6303
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J0141+6303.par 
+toas:
+  - CHIME_J0141+6303_tempo2.tim
+  - J0141+6303_inprep.tim 
+
+warnings:
+  - F2 included in fit, but residuals look ok.
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,F2,DM,JUMP1,JUMP2]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~
+  mjd-end: ~ 
+  #emax: 120.0 # Large error bars on section around MJD 59600 
+  bad-epoch:
+    - 59285
+    - 59286
+    - 59287
+    - 59316
+    - 59393
+    - 59283
+    - 59591
+    - 59593
+    - 59598
+    - 59600
+    - 59718
+    - 59941
+    - 59953
+    - 59580
+    - 59581
+    - 59583
+    - 59584
+    - 59587
+    - 59588
+    - 59589
+    - 59591
+    - 59593
+    - 59594
+    - 59596
+    - 59597
+    - 59598
+    - 59599
+    - 59600
+    - 59601
+    - 59602
+    - 59603
+    - 59605
+    - 59606
+    - 59607
+    - 59609
+    - 59610
+    - 59611
+    - 59612
+    - 59613
+    - 59615
+    - 59616
+    - 59617
+    - 59620
+    - 59621
+    - 59629
+    - 59630
+    - 59631
+    - 59635
+    - 59636
+    - 59637
+    - 59638
+    - 59640
+    - 59641
+    - 59644
+    - 59643
+    - 59645
+    - 59646
+    - 59647
+    - 59648
+    - 59651
+    - 59653
+    - 59655
+    - 59656
+    - 59657
+    - 59662
+    - 59663
+    - 59664
+    - 59665
+    - 59622
+    - 59666
+    - 59669
