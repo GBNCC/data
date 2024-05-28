@@ -1,0 +1,60 @@
+---
+
+source: J1734-0142
+chime-name: J1733-01
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1734-0142.par 
+toas:
+  - CHIME_J1733-01_tempo2.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  emax: ~ 
+  bad-epoch:
+    - 58936
+    - 58967
+    - 59007
+    - 59009
+    - 59014
+    - 59041
+    - 59050
+    - 59064
+    - 59077
+    - 59152
+    - 59181
+    - 59287
+    - 59288
+    - 59424
+    - 59450
+    - 59627
+    - 59718
+    - 59010
+    - 59284
+    - 59003
+    - 59902
+    - 59918
+    - 59920
+    - 59930
+    - 59939
+    - 59942
+    - 59948
+    - 59951
+    - 59952
+    - 59954
+    - 59956
+    - 59957
+    - 59962
+    - 59965
+    - 59970
+    - 59971
+    - 59973
+    - 59964
+    - 59967

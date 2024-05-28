@@ -1,0 +1,43 @@
+---
+
+source: J2023+0937
+chime-name: J2023+09
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J2023+0937.par 
+toas:
+  - CHIME_J2023+09_tempo2.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  emax: ~ 
+  bad-epoch:
+    - 59445
+    - 59450
+    - 59460
+    - 59495
+    - 59598
+    - 59599
+    - 59628
+    - 59654
+    - 59379
+    - 59395
+    - 59840
+    - 59882
+    - 59889
+    - 59915
+    - 59959
+    - 59960
+    - 59962
+    - 59965
+    - 59967
+    - 59968
+    - 60027
+    - 60028

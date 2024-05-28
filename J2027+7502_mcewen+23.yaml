@@ -1,0 +1,30 @@
+---
+# Even though Lynch TOAs include multiple freqs
+# in a single band, DM changes somewhat significantly.
+# Opting to keep it frozen.
+
+source: J2027+7502
+chime-name: J2027+7502
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J2027+7502.par 
+model-compare: J2027+7502_lynch+18.par
+toas:
+  - CHIME_J2027+7502_tempo2.tim 
+  - J2027+7502_lynch+18.tim  
+
+warnings:
+  - Frequency derivs up to F4 included in fit; resids still look bad.
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,F2,F3,F4,JUMP1,JUMP2]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~
+  mjd-end: ~ 
+  emax: ~ 
+  bad-epoch:
+    - 59395

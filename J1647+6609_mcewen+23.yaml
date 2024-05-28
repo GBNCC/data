@@ -1,0 +1,31 @@
+---
+
+source: J1647+6609
+chime-name: J1647+66
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1647+6609.par 
+model-compare: J1647+6608_lynch+18.par
+toas:
+  - CHIME_J1647+66_tempo2.tim
+  - J1647+6608_lynch+18.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  emax: ~ 
+  bad-epoch:
+    - 58820
+    - 58905
+    - 58761
+    - 59086
+    - 59130
+    - 59288
+    - 59003
+    - 59527

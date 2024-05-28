@@ -1,0 +1,29 @@
+---
+
+source: J0414+5832
+chime-name: J0413+58
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J0414+5832.chime.par
+toas:
+  - CHIME_J0413+58_tempo2.tim
+ignore-toas:
+  - J0414+5832_inprep.tim
+
+warnings:
+  - Ignoring GBT TOAs; cannot phase connect.
+  - F2, F3 are fit. 
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,F2,F3]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-end: ~
+  emax: ~ 
+  bad-epoch:
+    - 59284
+    - 59718
+    - 59285

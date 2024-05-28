@@ -1,0 +1,32 @@
+---
+
+source: J1434+7257
+chime-name: J1434+7257
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1434+7257.par 
+toas:
+  - CHIME_J1434+7257_tempo2.tim
+  - J1434+7257_inprep.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,PMELONG,PMELAT,F0,F1,JUMP1,JUMP2]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~
+  mjd-end: ~
+  #emax: 75.0 
+  bad-epoch:
+    - 58634
+    - 59284
+    - 59285
+    - 59286
+    - 59450
+    - 59627
+    - 59718
+    - 59871
+    - 59959
+    - 59960

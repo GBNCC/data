@@ -1,0 +1,37 @@
+---
+
+source: J2043+2828
+chime-name: J2044+28
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J2043+2828.par 
+model-compare: J2044+28_akash+22.par
+toas:
+  - J2044+28_akash+22.tim
+  - CHIME_J2044+28_tempo2.tim
+ignore-toas:
+  - P3436_J2044+28.tim # Replaced by Akash's TOAs (above)
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+#  mjd-start: 58880.0
+  mjd-end: ~
+  emax: ~ 
+  bad-epoch:
+    - 58905
+    - 59450
+    - 59284
+    - 59286
+    - 59395
+    - 59586
+    - 59627
+    - 59836
+    - 59940
+    - 59960
+    - 59961
+    - 59965

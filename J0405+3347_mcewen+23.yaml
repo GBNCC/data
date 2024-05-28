@@ -1,0 +1,26 @@
+---
+
+source: J0405+3347
+chime-name: J0405+3347
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J0405+3347.par 
+toas:
+  - CHIME_J0405+3347_tempo2.tim
+  - J0405+3347_swiggum+22.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,DM,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~
+  mjd-end: ~
+  emax: ~
+  bad-epoch:
+    - 58915
+    - 59286
+    - 59287
+    - 59449

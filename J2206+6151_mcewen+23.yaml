@@ -1,0 +1,35 @@
+---
+
+source: J2206+6151
+chime-name: J2206+6151
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J2206+6151.par 
+toas:
+  - CHIME_J2206+6151_tempo2.tim
+
+warnings:
+  - F2 included in fit, but residuals look ok.
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,F2]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start:
+  bad-range: [58400,58550]
+  mjd-end: ~
+  #emax: 350.0 
+  bad-epoch:
+    - 59287
+    - 59393
+    - 59953
+    - 59960
+    - 59215
+    - 59594
+    - 59888
+    - 59954
+    - 59955
+    - 59956

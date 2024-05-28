@@ -1,0 +1,39 @@
+---
+
+source: J0641+8021
+chime-name: J0645+80 
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J0641+8021.par 
+toas:
+  - CHIME_J0645+80_tempo2.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+#  mjd-start: 59050.0 # why do uncertainties get so much worse before this?
+  bad-range: [58700,59050]
+  mjd-end:
+  emax: ~ 
+  bad-epoch:
+    - 59284
+    - 58710
+    - 58730
+    - 58760
+    - 58704
+    - 58756
+    - 58921
+    - 58923
+    - 58928
+    - 58954
+    - 58984
+    - 58987
+    - 59010
+    - 59017
+    - 59717
+    - 59960
+    - 59961

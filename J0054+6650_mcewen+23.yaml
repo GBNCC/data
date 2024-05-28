@@ -1,0 +1,55 @@
+---
+
+source: J0054+6650
+chime-name: J0054+66
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J0054+6650.par 
+toas:
+  - CHIME_J0054+66_tempo2.tim 
+  - J0054+6650_inprep.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  emax: ~
+  bad-range: [58500.0,58800.0]
+  bad-epoch:
+    - 59012
+    - 59284
+    - 59287
+    - 59316
+    - 59567
+    - 59592
+    - 59595
+    - 59601
+    - 59627
+    - 59639
+    - 59665
+    - 59669
+    - 59733
+    - 59741
+    - 59747
+    - 59718
+    - 59863
+    - 59867
+    - 59612
+    - 59617
+    - 59917
+    - 59932
+    - 59942
+    - 59952
+    - 59960
+    - 59954
+    - 59959
+    - 59973
+    - 59983
+    - 59999
+    - 60012
+    - 60051

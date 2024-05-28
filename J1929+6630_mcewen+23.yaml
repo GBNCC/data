@@ -1,0 +1,23 @@
+---
+
+source: J1929+6630
+chime-name: J1929+66
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1929+6630.par 
+toas:
+  - CHIME_J1929+66_tempo2.tim
+  - J1929+6630_inprep.tim 
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1,JUMP1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~ 
+  mjd-end: ~
+  emax: ~ 
+  bad-epoch:
+    - 59956

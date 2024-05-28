@@ -1,0 +1,43 @@
+---
+
+source: J1319+6735
+chime-name: J1320+67
+par-directory: ./pars
+tim-directory: ./toas
+timing-model: J1319+6735.par 
+toas:
+  - CHIME_J1320+67_tempo2.tim
+
+# Parameters not included here will be frozen (e.g. DM)
+fit-params: [ELONG,ELAT,F0,F1]
+ephem: DE430
+bipm: BIPM2015
+
+# Global/subset TOA excision
+ignore:
+  mjd-start: ~
+  mjd-end: ~ 
+  emax: ~ 
+  bad-epoch:
+    - 59171
+    - 59592
+    - 59593
+    - 59594
+    - 59595
+    - 59627
+    - 59718
+    - 59719
+    - 59734
+    - 59829
+    - 59835
+    - 59837
+    - 59879
+    - 59886
+    - 59888
+    - 59952
+    - 59953
+    - 59957
+    - 59960
+    - 59940
+    - 59958
+    - 59963
